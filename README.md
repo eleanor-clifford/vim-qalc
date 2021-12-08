@@ -23,7 +23,8 @@ Optional:
 # Usage
 
 You can evaluate expressions in a few ways. Here are the default mappings
-(disabled with `let g:qalc_mappings = 0`)
+(disabled with `let g:qalc_mappings = 0`). Note that the terminal and quickfix
+options only work with vim (not neovim) at the moment.
 
 ```vimscript
 " Run the selection into a quickfix window (requires AsyncRun)
@@ -34,6 +35,8 @@ vnoremap <leader>xr :call qalc#ToRegister(v:register)<CR>
 vnoremap <leader>xs :call qalc#Substitute()<CR>
 " Evaluate and overwrite the current word (cannot contain a space!)
 nnoremap <leader>x<leader> viW:call qalc#Substitute()<CR>
+" Evaluate the current word and put it in the " register
+nnoremap <leader>xx viW"":call qalc#ToRegister(v:register)<CR>
 " Open qalc in a terminal window
 noremap <leader>xt :term ++close qalc<CR>
 ```
