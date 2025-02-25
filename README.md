@@ -1,3 +1,9 @@
+
+
+| :exclamation:  | This is a mirror of [https://git.sr.ht/~ecc/vim-qalc](https://git.sr.ht/~ecc/vim-qalc). Please refrain from using GitHub's issue and PR system.  |
+|----------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+
 # vim-qalc
 
 Simple integration with `qalc` for vim, to make calculations easier
